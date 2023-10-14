@@ -26,8 +26,8 @@ def start_parsing():
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--ignore-ssl-errors=yes")
     chrome_options.add_argument("--ignore-certificate-errors")
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--no-sandbox")
     driver = webdriver.Remote("http://selenium-chrome:4444/wd/hub", options=chrome_options)
     link_list = get_cars_list(BASE_URL, driver)
     for link in link_list:

@@ -33,7 +33,7 @@ def dump_from_db(db: Session):
         })
     db.close()
 
-    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     output_file = f"dumps/{timestamp}_dump.json"
 
     with open(output_file, "w", encoding="utf-8") as json_file:
