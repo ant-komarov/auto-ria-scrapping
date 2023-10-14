@@ -47,11 +47,11 @@ def start_dump_from_db():
 app.conf.beat_schedule = {
     "start_cars_parsing": {
         "task": "scheduled_tasks.start_cars_parsing",
-        "schedule": crontab(hour=14, minute=49),
+        "schedule": crontab(hour=12, minute=0),
     },
     "start_dump_from_db": {
         "task": "scheduled_tasks.start_dump_from_db",
-        "schedule": crontab(hour=14, minute=56),
+        "schedule": crontab(hour=0, minute=0),
     },
 }
 
