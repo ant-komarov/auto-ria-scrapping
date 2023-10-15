@@ -17,7 +17,7 @@ PostgresDB, SQLAlchemy + Alembic, Celery + Redis, Selenium, Docker compose
 
 ## How to run
 
-### Prerequests
+### Prerequirements
 Dokcer must be installed
 
 1. Clone this repository:
